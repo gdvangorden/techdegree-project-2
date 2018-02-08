@@ -1,0 +1,324 @@
+/*----------Style Defaults----------*/
+body {
+	font-size: medium;
+	font-family: 'Lato', sans-serif;
+	color: #4a4a4a;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	background: #fafafa;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	margin: 50px auto;
+}
+
+h1 {
+	font-weight: 800;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: 800;
+	margin: 50px 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+p {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+
+/*----------Main Navigation----------*/
+.main-nav ul {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
+	.main-nav li {
+		font-family: 'Lato', sans-serif;
+		font-weight: 800;
+		
+		list-style-type: none;
+		margin: 6px 0;
+		padding: 10px;
+		background: #ffffff;
+	}
+	
+	.main-nav a {
+		color: #4a4a4a;
+		transition: color .13s linear;
+	}
+	
+	.main-nav a:hover {
+		color: #f78460;
+	}
+
+
+/*----------Main Content----------*/
+#home {
+	width: 90%;
+}
+
+	.profile {
+		width: 70%;
+		max-width: 367px;
+	}
+
+
+#portfolio {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	margin: 50px auto 0;
+	padding-bottom: 10px;
+}
+
+.portfolio {
+	width: 90%;
+	margin: 0 auto 20px;
+}
+
+	.portfolio img {
+		width: 100%;
+	}
+
+#software {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	margin: 0 auto 50px;
+	padding-bottom: 10px;
+}
+
+.software {
+	width: 90%;
+	margin: 0 auto 20px;
+}
+
+	.software img {
+		width: 40%;
+	}
+
+#contact {
+	width: 90%;
+}
+
+#contact p {
+	margin: 25px 0;
+}
+
+.contact {
+	font-weight: 600;
+}
+
+
+/*----------Footers----------*/
+.mobile-footer {
+	width: 90%;
+	margin: 0 auto;
+	border-top: solid 1px #e7e7e7;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px auto;
+	font-weight: 600;
+}
+
+	.nav a {
+		color: #4a4a4a;
+		transition: color .13s linear;
+	}
+	
+	.nav a:hover {
+		color: #f78460;
+	}
+
+
+.full-footer {
+	display: none;
+}
+
+
+
+
+
+/*----------Media Queries--------------------------------------------------*/
+/*---Break Point: 768px---*/
+@media screen and (min-width: 768px) {
+	/*----------Main Navigation----------*/
+	.main-nav ul {
+	flex-direction: row;
+	justify-content: center;
+	}
+	
+		.main-nav ul {
+			margin: 0 auto;
+		}
+	
+		.main-nav li {
+			margin: 0 20px;
+			background: none;
+		}
+
+	/*----------Main Content----------*/
+	#home {
+		display: flex;
+		flex-direction: row-reverse;
+		font-size: 1.3em;
+		text-align: left;
+	}
+	
+	.profile {
+		margin-left: 20px;
+	}
+	
+	#portfolio {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0 5%;
+	}
+	
+		#portfolio h2 {
+			width: 100%;
+		}
+	
+	.portfolio {
+		max-width: 45%;
+	}
+	
+	#software {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0 5%;
+	}
+	
+		#software h2 {
+			width: 100%;
+		}
+
+	.software {
+		max-width: 30%;
+	}
+	
+		.software img {
+			width: 80%;
+		}
+	
+	#contact p {
+	font-size: 1.3em;
+	}
+	
+	
+	/*----------Footers----------*/
+	.mobile-footer {
+		display: none;
+		width: 90%;
+		margin: 0 auto;
+		border-top: solid 1px #e7e7e7;
+	}
+	
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		margin: 30px auto;
+		font-weight: 600;
+	}
+	
+		.nav a {
+			margin-left: 30px;
+			color: #4a4a4a;
+			transition: color .13s linear;
+		}
+		
+		.nav a:hover {
+			color: #f78460;
+		}
+	
+	.name {
+		margin-right: auto;
+	}
+	
+	.full-footer {
+		display: inline-block;
+		width: 90%;
+	}
+}
+
+
+/*---Break Point: 1024px---*/
+@media screen and (min-width: 1024px) {
+	/*----------Main Navigation----------*/
+	header {
+		padding: 0 5%;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.main-nav {
+		margin: auto 0;
+	}
+	
+	.main-nav ul {
+	flex-direction: row;
+	justify-content: space-between;
+	}
+	
+		.main-nav ul {
+			margin: 0 auto;
+		}
+	
+		.main-nav li {
+			font-family: 'Lato', sans-serif;
+			font-weight: 800;
+			
+			list-style-type: none;
+			margin: 0 20px;
+			padding: 10px;
+			background: none;
+		}
+		
+		.main-nav a {
+			color: #4a4a4a;
+			transition: color .13s linear;
+		}
+		
+		.main-nav a:hover {
+			color: #f78460;
+		}
+		
+		
+	/*----------Main Content----------*/
+	.portfolio {
+		max-width: 32%;
+	}
+	
+	.software {
+		max-width: 32%;
+	}
+	
+		.software img {
+				width: 60%;
+			}
+
+}
